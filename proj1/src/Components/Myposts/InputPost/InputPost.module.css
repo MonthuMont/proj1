@@ -1,0 +1,32 @@
+.h2{
+    font-size: 30px;
+    font-weight: 500;
+    padding-bottom: 30px;
+    align-items: center;
+    text-align: center;
+    
+}
+.input{
+    background-color: rgb(191, 189, 189);
+    width: 100%;
+    min-height: 50px ;
+    padding: 10px;
+    
+}
+.inputBlock{
+    display: flex;
+    flex-direction: column;
+
+}
+.divButton{
+  text-align: end;
+  padding-top: 15px;
+ 
+
+}
+.btn{
+    background-color: violet;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 5px;
+}

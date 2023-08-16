@@ -1,0 +1,17 @@
+.img{
+    max-width: 70px;
+    max-height: 70px;
+    object-fit: cover;
+    border-radius: 30px;
+    display: inline;
+}
+.comments{
+    display: inline;
+    padding-left: 30px;
+    font-weight: 500;
+    font-size: 18px;
+}
+.block{
+    margin-bottom: 30px;
+    padding-left: 10px;
+}

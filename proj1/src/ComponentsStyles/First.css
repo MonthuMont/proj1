@@ -24,8 +24,8 @@
 .main {
   display: grid;
   grid-area: m;
-  background-color: green;
-  grid-template-rows: 20% 40% 40%;
+  background-color: rgb(219, 227, 219);
+  grid-template-rows: 20% 20% 60%;
   grid-template-columns: 100%;
 
   grid-template-areas:
@@ -42,6 +42,7 @@
 }
 .item {
   padding-top: 5px;
+  cursor: pointer;
 }
 .pad {
   padding-top: 35px;
@@ -63,19 +64,22 @@
   grid-area: input;
 }
 .user-img {
-  width: 200px;
+  width: 150px;
+  max-height: 150px;
   object-fit: cover;
-  max-height: 200px;
+  padding-left: 5px;
 }
 .user-flex {
   padding-left: 20px;
+ 
 }
-.user__info{
-    padding-top: 10px;
-    font-weight: 400;
-    color: aliceblue;
+.user__info {
+  padding-top: 10px;
+  font-weight: 400;
+  font-size: 17px;
+  color: black;
 }
-.nick{
-    font-weight: 700;
-    font-size: 22px;
+.nick {
+  font-weight: 700;
+  font-size: 22px;
 }
