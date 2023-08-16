@@ -1,0 +1,81 @@
+.img {
+  max-width: 70px;
+  max-height: 100px;
+  object-fit: cover;
+  padding-left: 5px;
+}
+.wrapper {
+  display: grid;
+  grid-template-rows: 1fr 9fr;
+  grid-template-columns: 3fr 10fr;
+  grid-template-areas:
+    "h h"
+    "n m";
+  gap: 15px;
+}
+.header {
+  grid-area: h;
+  background-color: aqua;
+}
+.nav {
+  grid-area: n;
+  background-color: rebeccapurple;
+}
+.main {
+  display: grid;
+  grid-area: m;
+  background-color: green;
+  grid-template-rows: 20% 40% 40%;
+  grid-template-columns: 100%;
+
+  grid-template-areas:
+    "main "
+    "user"
+    "input";
+  gap: 25px;
+}
+.list-item {
+  font-size: 20px;
+  color: white;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.item {
+  padding-top: 5px;
+}
+.pad {
+  padding-top: 35px;
+}
+.main-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.main-logo {
+  grid-area: main;
+}
+.user {
+  grid-area: user;
+  display: flex;
+  flex-direction: row;
+}
+.input {
+  grid-area: input;
+}
+.user-img {
+  width: 200px;
+  object-fit: cover;
+  max-height: 200px;
+}
+.user-flex {
+  padding-left: 20px;
+}
+.user__info{
+    padding-top: 10px;
+    font-weight: 400;
+    color: aliceblue;
+}
+.nick{
+    font-weight: 700;
+    font-size: 22px;
+}
