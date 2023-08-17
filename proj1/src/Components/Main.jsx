@@ -24,7 +24,9 @@ const Main = () => {
       </div>
       <div>
         <InputPost></InputPost>
-        <Comments></Comments>
+        <Comments message="Hello Motherfucker!" likes = "77"></Comments>
+        <Comments message= "Wanna play some games?" likes = "11"></Comments>
+        <Comments message = "Hello! My name is oleG!" likes = "-9"></Comments>
       </div>
     </main>
   );

@@ -3,10 +3,10 @@ const Navbar = () => {
         <nav className="nav">
         <ul className="list-item">
           <li className="item">
-            <a>Profile</a>
+            <a href="/profile">Profile</a>
           </li>
           <li className="item">
-            <a>Messages</a>
+            <a href="dialogs">Messages</a>
           </li>
           <li className="item">
             <a>News</a>

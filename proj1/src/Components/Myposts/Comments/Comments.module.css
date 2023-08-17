@@ -6,12 +6,25 @@
     display: inline;
 }
 .comments{
-    display: inline;
+    display: inline-block;
     padding-left: 30px;
     font-weight: 500;
     font-size: 18px;
+    padding-top: 10px;
 }
 .block{
     margin-bottom: 30px;
     padding-left: 10px;
+}
+.like{
+    max-width: 30px;
+    height: 20px;
+    display: inline;
+}
+.likesBlock{
+    padding-left: 23px;
+    padding-top: 10px;
+}
+.counter{
+    display: inline;
 }
