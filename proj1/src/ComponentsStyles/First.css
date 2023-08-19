@@ -16,7 +16,6 @@
 .header {
   grid-area: h;
   background-color: rgb(234, 241, 241);
-  
 }
 .nav {
   grid-area: n;
@@ -51,7 +50,21 @@
 .item {
   padding-top: 20px;
   cursor: pointer;
+  color: white;
+  text-decoration: none;
+  transition-duration: 300ms;
 }
+a {
+  color: #fff;
+  transition-duration: 0.3s;
+}
+a:visited {
+  color: #fff;
+}
+a:hover {
+  color: blue;
+}
+
 .pad {
   padding-top: 70px;
 }
@@ -79,7 +92,6 @@
 }
 .user-flex {
   padding-left: 20px;
- 
 }
 .user__info {
   padding-top: 10px;
