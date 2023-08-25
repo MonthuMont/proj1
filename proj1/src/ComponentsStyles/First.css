@@ -19,14 +19,14 @@
 }
 .nav {
   grid-area: n;
-  background-color: rebeccapurple;
+  background-color: rgba(206, 71, 71, 0.182);
   align-self: start;
   overflow: hidden;
   position: sticky;
   top: 0;
   width: 100%;
   opacity: 0.5;
-  height: 500px;
+  height:100vh;
 }
 .main {
   display: grid;
@@ -42,24 +42,22 @@
   gap: 25px;
 }
 .list-item {
-  font-size: 22px;
-  color: white;
+  font-size: 22px; 
   padding-top: 20px;
   padding-left: 10px;
 }
 .item {
   padding-top: 20px;
   cursor: pointer;
-  color: white;
   text-decoration: none;
   transition-duration: 300ms;
 }
 a {
-  color: #fff;
+  color: black
   transition-duration: 0.3s;
 }
 a:visited {
-  color: #fff;
+  color: rgba(11, 2, 2, 0.956)
 }
 a:hover {
   color: blue;

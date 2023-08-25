@@ -1,0 +1,40 @@
+.h1 {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+.wrapper {
+  height: 100vh;
+  position: relative;
+}
+.footerWrapper{
+    display: flex;
+    justify-content: center;
+}
+.footer {
+    background-color: rgba(127, 255, 212, 0.364);
+    height: 40px;
+    width: 50%;
+    bottom: 0;
+    align-self: end;
+    overflow: hidden;
+    position: fixed;
+    margin-bottom: 20px;
+}
+.input{
+    padding-left: 20px;
+    padding-top:10px;
+    position: relative;
+    
+}
+.btn{
+    position: absolute;
+    right: 1px;
+    padding-top: 0px;
+    background-color: rgb(24, 168, 60);
+    height: 100%;
+    border-radius: 7px;
+
+    
+    
+}
