@@ -9,35 +9,34 @@ const DialogItem = (props) => {
     </li>
   );
 };
+
 const Dialog = (props) => {
-  const dialogData = [
-    { id: 1, name: "Andy" },
-    { id: 2, name: "Jack" },
-    { id: 3, name: "Melon" },
-    { id: 4, name: "Sore" },
-  ];
-  let dialogNames = dialogData.map((el) => (
+  let dialogNames = props.dialogData.map((el) => (
     <DialogItem name={el.name} id={el.id}></DialogItem>
   ));
+  let route = props.dialogData.map((el) => (
+    <Route
+      path={String(el.id)}
+      element={
+        <RightBlock messageData1={props.messageData1} name={el.name}></RightBlock>
+      }
+    ></Route>
+  ));
+
   return (
     <div className={styles.wrapper}>
       <div className={styles.leftblock}>
         <h1 className={styles.h1}>Dialogs</h1>
-        <ul className={styles.listItem}>
-          {dialogNames}
-        </ul>
+        <ul className={styles.listItem}>{dialogNames}</ul>
       </div>
 
       <div className={styles.rightblock}>
         <Routes>
-          <Route
+          {/* <Route
             path="1"
             element={<RightBlock name="Andy"></RightBlock>}
-          ></Route>
-          <Route
-            path="2"
-            element={<RightBlock name="kensi"></RightBlock>}
-          ></Route>
+          ></Route> */}
+          {route}
         </Routes>
       </div>
     </div>

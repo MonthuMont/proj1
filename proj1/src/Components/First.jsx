@@ -14,7 +14,8 @@ import InputPost from "./Myposts/InputPost/InputPost";
 import Navbar from "./Navbar"; 
 import News from "./News/News";
 let a = 11;
-const First = () => {
+const First = (props) => {
+
   return (
     <Router>
       <div className="wrapper">
@@ -22,8 +23,8 @@ const First = () => {
         <Navbar></Navbar>
         <div>
           <Routes>
-            <Route exact path="/profile" element={<Main></Main>} />
-            <Route exact path="/dialogs/*" element={<Dialog></Dialog>} />
+            <Route exact path="/profile" element={<Main messageData={props.firstState.profilePage.messageData} userData={props.firstState.profilePage.userData} addPostEl={props.addPostEl}></Main>} />
+            <Route exact path="/dialogs/*" element={<Dialog dialogData={props.firstState.messagesPage.dialogData} messageData1={props.firstState.messagesPage.messageData1} ></Dialog>} />
             {/* <Route exact path="/dialogs/" */}
             <Route path="/news" element={<News></News>} />
           </Routes>

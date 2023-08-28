@@ -1,11 +1,14 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
-import First from './Components/First.jsx'
+import React from "react";
+import ReactDOM from "react-dom/client";
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <First></First>
-  </React.StrictMode>,
-)
+import "./index.css";
+
+import state from "./redux/state.js";
+import { rerenderEntireTree } from "./render.jsx";
+// import state from "./redux/state.js";
+
+
+// addPostEl('John Cena')
+
+rerenderEntireTree(state);
+// messageData={messageData} dialogData={dialogData} userData={userData} messageData1={messageData1}

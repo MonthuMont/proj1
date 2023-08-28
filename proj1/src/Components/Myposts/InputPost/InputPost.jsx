@@ -1,17 +1,26 @@
 import styles from "./InputPost.module.css";
-const InputPost = () => {
+import React from "react";
+
+const InputPost = (props) => {
+  let newPostEl = React.createRef();
+   let addPost = () => {
+    let text = newPostEl.current.value;
+    props.addPostEl(text);
+  };
   return (
     <div className={styles.inputBlock}>
       <h2 className={styles.h2}>My posts</h2>
-      <div>
-        <input
+      <textarea ref={newPostEl}  className={styles.textarea}>
+        {/* <input 
           className={styles.input}
           type="text"
           placeholder="your news..."
-        ></input>
-      </div>
+        ></input> */}
+      </textarea>
       <div className={styles.divButton}>
-        <button className={styles.btn} type="submit">Submit</button>
+        <button onClick={addPost} className={styles.btn} type="button">
+          Submit
+        </button>
       </div>
     </div>
   );

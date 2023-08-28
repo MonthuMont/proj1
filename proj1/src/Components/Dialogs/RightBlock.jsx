@@ -2,13 +2,8 @@ import Text from "./Text";
 import styles from "./RightBlock.module.css";
 import Comments from "../Myposts/Comments/Comments";
 const RightBlock = (props) => {
-  const messageData = [
-    { id: 1, message: "Hello MF" },
-    { id: 2, message: "You're dead" },
-    { id: 3, message: "bye MF" },
-    { id: 4, message: "Fu MF" },
-  ];
-  let dialogMessages = messageData.map((el) => (
+
+  let dialogMessages = props.messageData1.map((el) => (
     <Text message={el.message} id={el.id}></Text>
   ));
   return (

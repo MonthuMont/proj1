@@ -30,3 +30,10 @@
     border-radius: 4px;
     padding: 5px;
 }
+.textarea{
+    border: 2px solid black;
+    border-radius: 6px;
+    padding-top: 10px ;
+    padding-left: 15px;
+    font-size: 22px;
+}

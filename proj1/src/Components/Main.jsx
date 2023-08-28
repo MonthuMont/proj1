@@ -28,28 +28,16 @@ const UserImage = (props) => {
     </div>
   );
 };
-const Main = () => {
+const Main = (props) => {
   const profileImages = {
     image:
       "https://pikuco.ru/upload/test_stable/6d7/6d744c3509179eeb5f3a1474a06b181e.webp",
   };
-  const messageData = [
-    { id: 1, message: "Nice pic!", likeCount: 10 },
-    { id: 2, message: "Awful! ", likeCount: -7 },
-    { id: 3, message: "You dumb!", likeCount: -19 },
-    { id: 4, message: "Hi! My name is oleG", likeCount: -10 },
-  ];
-  let commentsMap = messageData.map((m) => (
+
+  let commentsMap = props.messageData.map((m) => (
     <Comments message={m.message} likes={m.likeCount} id={m.id}></Comments>
   ));
-  const userData = {
-    id: 14,
-    name: "Name: Dmitry K",
-    birthDate: "Date of birth: 2nd of January, 2000 ",
-    city: " City: Togliatty",
-    education: " Education: TGU",
-    gender: " Sex: Male",
-  };
+
   return (
     <main className="main">
       <MainLogo></MainLogo>
@@ -57,17 +45,17 @@ const Main = () => {
         <UserImage image={profileImages.image}></UserImage>
         <div className="user-flex">
           <UserInfo
-            id={userData.id}
-            name={userData.name}
-            birthDate={userData.birthDate}
-            city={userData.city}
-            education={userData.education}
-            gender={userData.gender}
+            id={props.userData.id}
+            name={props.userData.name}
+            birthDate={props.userData.birthDate}
+            city={props.userData.city}
+            education={props.userData.education}
+            gender={props.userData.gender}
           ></UserInfo>
         </div>
       </div>
       <div>
-        <InputPost></InputPost>
+        <InputPost addPostEl={props.addPostEl}></InputPost>
         {commentsMap}
       </div>
     </main>
